@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">franco</string>
+    <string name="rateUs">قيّمنا</string>
+    <string name="moreApps">تطبيقاتنا</string>
+    <string name="share">مشاركة التطبيق</string>
+    <string name="copy">تم نسخ النص</string>
+    <string name="sendBy">المشاركة بواسطة</string>
+
+
+</resources>

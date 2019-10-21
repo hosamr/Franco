@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">franco</string>
+    <string name="rateUs">Rate us</string>
+    <string name="moreApps">more apps</string>
+    <string name="share">share app</string>
+    <string name="copy">Copied</string>
+    <string name="sendBy">Share using </string>
+
+</resources>

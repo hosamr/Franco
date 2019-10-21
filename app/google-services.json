@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1091106917156",
+    "firebase_url": "https://franco-88cd1.firebaseio.com",
+    "project_id": "franco-88cd1",
+    "storage_bucket": "franco-88cd1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091106917156:android:9e7deaa8c63bea66adc1b1",
+        "android_client_info": {
+          "package_name": "com.hosam2277.hosamr.franco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091106917156-smgs21sdlfk1udjnmb2n56cbhjd42qam.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyVJZw-DAx_2sP3847PBM-Y4bGj8g3Qvc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1091106917156-smgs21sdlfk1udjnmb2n56cbhjd42qam.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
