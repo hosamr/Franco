@@ -1,7 +1,6 @@
-package com.hosam2277.hosamr.franco;
+package com.franco;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.ClipData;
 import android.content.Intent;
 import android.database.Cursor;
@@ -14,8 +13,6 @@ import android.widget.PopupMenu;
 import android.view.View;
 import android.widget.Toast;
 import android.content.ClipboardManager;
-
-
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -27,7 +24,6 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
-    PopupMenu popup ;
     private HashMap<Character, String> francoToArabicArray = new HashMap<>();
     private HashMap<Character, String> arabicToFrancoArray = new HashMap<>();
     EditText editText;
@@ -51,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
         mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-4089508720843264/4068116646");
+        mInterstitialAd.setAdUnitId("ca-app-pub-4089508720843264/5415208510");
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
         mInterstitialAd.setAdListener(new AdListener() {
             @Override
@@ -66,30 +62,7 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
         setFrancoToArabicArray();
         setArabicToFrancoArray();
         myDb  = new DatabaseHelper(this );
-        //AddData();
-        //viewAll();
-    }
-    public  void AddData() {
 
-    }
-    public void viewAll() {
-        Cursor res = myDb .getAllData();
-        Toast.makeText(this, String.valueOf(res.getCount()), Toast.LENGTH_LONG).show();
-
-        if(res.getCount() == 0) {
-            Toast.makeText(this, "ErrorNothing found", Toast.LENGTH_LONG).show();
-            return;
-        }
-
-        StringBuffer buffer = new StringBuffer();
-        while (res.moveToNext()) {
-            buffer.append("Id :"+ res.getString(0)+"\n");
-            buffer.append("Franco :"+ res.getString(1)+"\n");
-            buffer.append("Arabic :"+ res.getString(2)+"\n");
-        }
-
-        // Show all data
-       // Toast.makeText(this, "Data"+buffer.toString(), Toast.LENGTH_LONG).show();
     }
 
     public void francoToArabic(View v) {
@@ -333,9 +306,6 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
         arabicToFrancoArray.put('إ', "e");
         arabicToFrancoArray.put('ى', "a");
         arabicToFrancoArray.put('ً', "n");
-
-
-
     }
 
     public String getArabicToFrancoArray(char c) {
@@ -344,5 +314,4 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
         }
         return Character.toString(c);
     }
-
 }

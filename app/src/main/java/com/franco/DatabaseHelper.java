@@ -1,4 +1,4 @@
-package com.hosam2277.hosamr.franco;
+package com.franco;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -29,6 +29,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         insert(db,"salamo ", "سلام");
         insert(db,"3alikom", "عليكم");
         insert(db,"isa", "إن شاء الله");
+        insert(db,"isa", "ان شاء الله");
         insert(db,"ina", "ان شاء الله");
         insert(db,"isa", "ان شاءالله");
         insert(db,"msa", "ما شاء الله");
@@ -73,7 +74,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         insert(db,"5areg", "خارج");
         insert(db,"7aga", "حاجة");
         insert(db,"saba5", "صبخ");
-
+        insert(db,"aw", "أو");
+        insert(db,"W8", "انتظر");
+        insert(db,"CU", "أراك لاحقاً");
+        insert(db,"U2", "وأنت أيضاً");
+        insert(db,"TYT", "خذ وقتك");
     }
     @Override
     public void onOpen(SQLiteDatabase db) {

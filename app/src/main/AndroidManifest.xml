@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.hosam2277.hosamr.franco">
+    package="com.franco">
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
@@ -17,10 +17,10 @@
         >
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-4089508720843264~4017078085"/>
+            android:value="ca-app-pub-4089508720843264~3976690687"/>
 
 
-        <activity android:name="com.hosam2277.hosamr.franco.MainActivity"
+        <activity android:name=".MainActivity"
             android:screenOrientation="portrait"
             >
 

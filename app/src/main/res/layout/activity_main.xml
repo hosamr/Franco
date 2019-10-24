@@ -8,84 +8,101 @@
     android:background="#D8D8D8"
     >
 
-        <ImageButton
-            android:id="@+id/popup_menu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="www"
-            android:onClick="showPopup"
-            android:src="@drawable/ic_more_vert_black_24dp" />
+    <ImageButton
+        android:id="@+id/popup_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="www"
+        android:onClick="showPopup"
+        android:src="@drawable/ic_more_vert_black_24dp" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/franco" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/franco"
+        android:layout_weight="1"
+        />
 
 
     <EditText
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="match_parent"
         android:text=""
         android:background="@drawable/shape1"
         android:layout_margin="5dp"
+        android:layout_weight="0.9"
+
         />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="25dp" />
+        android:layout_height="match_parent"
+        android:layout_weight="1.1"/>
 
     <EditText
         android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="match_parent"
         android:text=""
         android:background="@drawable/shape1"
         android:layout_margin="5dp"
         android:editable="false"
         android:focusable="false"
         android:clickable="false"
+        android:layout_weight="0.9"
 
         />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1.05"
+
+        >
 
         <ImageButton
             android:id="@+id/imageButton2"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             app:srcCompat="@drawable/sendby"
             android:onClick="send"
+
             />
 
         <ImageButton
             android:id="@+id/imageButton"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             app:srcCompat="@drawable/copy"
             android:onClick="copy"
+
             />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.97"
+
+        >
 
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="3rby"
             android:background="#ECEFF1"
             android:onClick="francoToArabic"
+            android:textSize="15dp"
+            android:layout_weight="1"
+
             />
         <Space
             android:layout_width="match_parent"
@@ -94,10 +111,12 @@
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text=" "
+            android:layout_height="match_parent"
+            android:text="فرانكو"
             android:background="#ECEFF1"
             android:onClick="arabicToFranco"
+            android:textSize="15dp"
+            android:layout_weight="1"
 
             />
     </LinearLayout>
@@ -108,8 +127,9 @@
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
+        android:layout_weight="1"
         ads:adSize="BANNER"
-        ads:adUnitId="ca-app-pub-4089508720843264/9546459131">
+        ads:adUnitId="ca-app-pub-4089508720843264/6219710645">
     </com.google.android.gms.ads.AdView>
 
 </LinearLayout>
